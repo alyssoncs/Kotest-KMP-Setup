@@ -33,6 +33,18 @@ kotlin {
             implementation(libs.kotest.engine)
             implementation(libs.kotest.assertions)
         }
+
+        getByName("androidHostTest") {
+            dependencies {
+                implementation(libs.kotest.junit.runner)
+            }
+        }
+    }
+}
+
+tasks.withType<Test>().configureEach {
+    if (name == "testAndroidHostTest") {
+        useJUnitPlatform()
     }
 }
 

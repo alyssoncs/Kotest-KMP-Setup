@@ -1,12 +1,10 @@
 package io.github.kotlin.fibonacci
 
-import kotlin.test.Test
-import kotlin.test.assertEquals
+import io.kotest.core.spec.style.DescribeSpec
+import io.kotest.matchers.shouldBe
 
-class AndroidFibiTest {
-
-    @Test
-    fun testThirdElement() {
-        assertEquals(3, generateFibi().take(3).last())
+class AndroidFibiTest : DescribeSpec({
+    it("test 3rd element") {
+        generateFibi().take(3).last() shouldBe 3
     }
-}
+})
