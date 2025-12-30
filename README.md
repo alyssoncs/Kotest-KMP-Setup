@@ -2,7 +2,7 @@
 
 This repo is a **Kotlin Multiplatform (KMP)** template focused on **setting up Kotest** in a multiplatform library.
 
-It includes a minimal, working test setup across typical KMP source sets (for example: `commonTest`, `jvmTest`, `androidHostTest`) so you can copy the configuration into your own project.
+It includes a minimal, working test setup across typical KMP source sets (for example: `commonTest`, `iosTest`, `jvmTest`, `androidHostTest`) so you can copy the configuration into your own project.
 
 > Note: the repo contains two modules that differ only in how JVM tests are executed (Kotest task vs JUnit Platform). Details are below.
 
