@@ -1,5 +1,4 @@
 import com.android.build.api.dsl.androidLibrary
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
@@ -9,7 +8,13 @@ plugins {
 }
 
 kotlin {
-    jvm()
+    jvm {
+        testRuns.all {
+            executionTask {
+                failOnNoDiscoveredTests = false
+            }
+        }
+    }
     androidLibrary {
         namespace = "org.jetbrains.kotlinx.multiplatform.library.template"
         compileSdk = libs.versions.android.compileSdk.get().toInt()
@@ -29,4 +34,8 @@ kotlin {
             implementation(libs.kotest.assertions)
         }
     }
+}
+
+tasks.named("allTests") {
+    dependsOn("jvmKotest")
 }
