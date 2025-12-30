@@ -28,10 +28,11 @@ kotlin {
     linuxX64()
 
     sourceSets {
-        commonTest.dependencies {
-            implementation(libs.kotlin.test)
-            implementation(libs.kotest.engine)
-            implementation(libs.kotest.assertions)
+        commonTest {
+            dependencies {
+                implementation(libs.kotest.engine)
+                implementation(libs.kotest.assertions)
+            }
         }
 
         getByName("androidHostTest") {
