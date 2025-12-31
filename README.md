@@ -1,6 +1,6 @@
 # Kotest on Kotlin Multiplatform (KMP) — template
 
-This repo is a **Kotlin Multiplatform (KMP)** template focused on **setting up Kotest** in a multiplatform library.
+This repo is a **Kotlin Multiplatform (KMP)** template focused on **setting up Kotest** in a multiplatform library. Original blog post [here](https://alyssoncirilo.com/blog/kotest-kmp-setup)
 
 It includes a minimal, working test setup across typical KMP source sets (for example: `commonTest`, `iosTest`, `jvmTest`, `androidHostTest`) so you can copy the configuration into your own project.
 
