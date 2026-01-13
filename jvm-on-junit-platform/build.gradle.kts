@@ -47,7 +47,7 @@ kotlin {
     }
 }
 
-tasks.withType<Test> {
+tasks.withType<Test>().configureEach {
     if (name == "testAndroidHostTest") {
         useJUnitPlatform()
     }
