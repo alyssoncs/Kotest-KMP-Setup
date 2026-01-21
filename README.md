@@ -6,34 +6,13 @@ It includes a minimal, working test setup across typical KMP source sets (for ex
 
 Attribution: based on the Kotlin Multiplatform Library Template: https://github.com/Kotlin/multiplatform-library-template
 
-> Note: the repo contains two modules that differ only in how JVM tests are executed (Kotest task vs JUnit Platform). Details are below.
+The [`kotest-tests/`](./kotest-tests) module contains all the setup for running Kotest tests on multiple platforms.
 
-## Modules
-
-### 1) `jvm-on-kotest`
-Path: [`jvm-on-kotest/`](./jvm-on-kotest)
-
-This module runs JVM tests using Kotest’s dedicated Gradle task (created by the `io.kotest` plugin).
-
-- JVM tests are executed via the `jvmKotest` task.
-- `allTests` is wired to depend on `jvmKotest`.
-- No `useJUnitPlatform()` is applied to the JVM `Test` task for `jvmTest`.
-
-Relevant build file: [`jvm-on-kotest/build.gradle.kts`](./jvm-on-kotest/build.gradle.kts)
-
-### 2) `jvm-on-junit-platform`
-Path: [`jvm-on-junit-platform/`](./jvm-on-junit-platform)
-
-This module runs JVM tests on the standard Gradle `test` task by enabling the **JUnit Platform**.
-
-- JVM `testRuns` are configured with `useJUnitPlatform()`.
-- Kotest runs through the JUnit 5 runner dependency (`kotest-runner-junit5`).
-
-Relevant build file: [`jvm-on-junit-platform/build.gradle.kts`](./jvm-on-junit-platform/build.gradle.kts)
+Relevant build file: [`kotest-tests/build.gradle.kts`](./kotest-tests/build.gradle.kts)
 
 ## Where are the tests?
 
-Each module includes tests in the standard KMP source sets:
+The tests are in the standard KMP source sets:
 
 - `commonTest`: Kotest specs shared across all targets
   - Example: `src/commonTest/kotlin/FibiTest.kt`
