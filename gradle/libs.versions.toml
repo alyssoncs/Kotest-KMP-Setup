@@ -9,7 +9,7 @@ android-compileSdk = "36"
 [libraries]
 kotest-assertions = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
 kotest-engine = { module = "io.kotest:kotest-framework-engine", version.ref = "kotest" }
-kotest-junit-runner = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
+kotest-junit-runner = { module = "io.kotest:kotest-runner-junit6", version.ref = "kotest" }
 
 [plugins]
 android-kotlin-multiplatform-library = { id = "com.android.kotlin.multiplatform.library", version.ref = "agp" }
