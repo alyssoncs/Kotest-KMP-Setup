@@ -14,5 +14,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "kotest-kpm-setup"
-include(":jvm-on-junit-platform")
-include(":jvm-on-kotest")
+include(":kotest-tests")
