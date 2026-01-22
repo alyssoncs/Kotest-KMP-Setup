@@ -14,7 +14,7 @@ kotlin {
         }
     }
     androidLibrary {
-        namespace = "com.alysson.jvm-on-junit-platform.template"
+        namespace = "com.alysson.kmp.kotest.setup"
         compileSdk = libs.versions.android.compileSdk.get().toInt()
         minSdk = libs.versions.android.minSdk.get().toInt()
 
