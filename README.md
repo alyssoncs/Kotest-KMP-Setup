@@ -1,6 +1,15 @@
 # Kotest on Kotlin Multiplatform (KMP) — template
 
-This repo is a **Kotlin Multiplatform (KMP)** template focused on **setting up Kotest** in a multiplatform library. Original blog post [here](https://alyssoncirilo.com/blog/kotest-kmp-setup)
+[![Android Weekly](https://img.shields.io/badge/Android%20Weekly-%23709-green)](https://androidweekly.net/issues/issue-709)
+[![Kotlin Weekly](https://img.shields.io/badge/Kotlin%20Weekly-%23494-purple)](https://mailchi.mp/kotlinweekly/kotlin-weekly-494)
+
+> **🚀 updated guide (Jan 2026):**
+> 
+> The full step-by-step explanation for this setup—including the migration to **Kotest 6.1.0** and **JUnit 6**—is available on my blog.
+>
+> 👉 **Read: [Setting up Kotest on KMP (Updated)](https://alyssoncirilo.com/blog/kotest-kmp-setup/)**
+
+This repo is a Kotlin Multiplatform (KMP) template focused on **setting up Kotest** in a multiplatform library. It is automatically tested against the latest versions via Renovate.
 
 It includes a minimal, working test setup across typical KMP source sets (for example: `commonTest`, `iosTest`, `jvmTest`, `androidHostTest`) so you can copy the configuration into your own project.
 
