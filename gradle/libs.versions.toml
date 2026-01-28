@@ -2,7 +2,7 @@
 agp = "9.0.0"
 kotest = "6.1.1"
 kotlin = "2.3.0"
-ksp = "2.3.4"
+ksp = "2.3.5"
 android-minSdk = "24"
 android-compileSdk = "36"
 
