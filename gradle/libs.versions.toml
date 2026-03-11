@@ -1,6 +1,6 @@
 [versions]
 agp = "9.1.0"
-kotest = "6.1.5"
+kotest = "6.1.6"
 kotlin = "2.3.10"
 ksp = "2.3.6"
 gradleDaemonJvmToolchain = "24"
