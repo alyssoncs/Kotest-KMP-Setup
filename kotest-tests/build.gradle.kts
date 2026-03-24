@@ -6,6 +6,11 @@ plugins {
 }
 
 kotlin {
+    compilerOptions {
+        allWarningsAsErrors = true
+        jvmToolchain(libs.versions.jvmTarget.get().toInt())
+    }
+
     jvm {
         testRuns.all {
             executionTask {
