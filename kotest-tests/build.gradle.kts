@@ -18,7 +18,7 @@ kotlin {
             }
         }
     }
-    androidLibrary {
+    android {
         namespace = "com.alysson.kmp.kotest.setup"
         compileSdk = libs.versions.android.compileSdk.get().toInt()
         minSdk = libs.versions.android.minSdk.get().toInt()
