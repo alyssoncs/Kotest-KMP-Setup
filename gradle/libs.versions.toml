@@ -2,7 +2,7 @@
 agp = "9.3.0"
 jvmTarget = "21"
 kotest = "6.2.1"
-kotlin = "2.4.0"
+kotlin = "2.4.10"
 ksp = "2.3.10"
 gradleDaemonJvmToolchain = "25"
 android-minSdk = "24"
