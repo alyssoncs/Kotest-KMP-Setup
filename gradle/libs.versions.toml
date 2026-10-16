@@ -1,7 +1,7 @@
 [versions]
 agp = "9.4.1"
 jvmTarget = "21"
-kotest = "6.2.5"
+kotest = "6.2.6"
 kotlin = "2.4.21"
 ksp = "2.3.12"
 gradleDaemonJvmToolchain = "25"
